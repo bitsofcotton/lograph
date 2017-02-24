@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<!-- <?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+-->
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" media="screen" href="../style/screen.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="../style/nattoh.css" />
+  <link rel="stylesheet" type="text/css" media="print" href="../style/print.css" />
+  <link rel="stylesheet" type="text/css" media="print" href="../style/nattoh.css" />
+  <title>log nattoh. @ services.meta-gadgets.info.</title>
+  <script type="text/javascript" src="../javascript/log.js"></script>
+  <script type="text/javascript" src="../javascript/nattoh.js"></script>
+</head>
+<body>
+  <div id="header">
+    <header>
+    <nav>
+      <div id="title">Log nattoh.</div>
+    </nav>
+    </header>
+  </div>
+  
+  <div id="containt">
+    <div id="menu">
+      <a href='javascript: nattoh.change("table");'>table</a> |
+      <a href='javascript: nattoh.change("csv");'>csv</a> |
+      <a href='javascript: nattoh.change("graph");'>graph</a> |
+      <a href='javascript: nattoh.change("code");'>code</a> |
+      <a href='javascript: nattoh.change("info");'>information</a>
+      <br/>
+    </div>
+    <div id="div_csv">
+      (<a href="javascript: nattoh.loadCSV();">load to table</a> |
+      <a href="javascript: nattoh.saveCSV();">make from table</a> |
+      <a href="javascript: nattoh.sampleCSV();">from sample</a> |
+      <a href="javascript: nattoh.defaultCSV();">from default</a> |
+      <a href="javascript: nattoh.escapeCSV();">escape</a> |
+      <a href="javascript: nattoh.unescapeCSV();">unescape</a>) csv:<br/>
+      <textarea id="csv" class="textareas" placeholder="csv codes." cols="80" rows="30">

@@ -1,0 +1,82 @@
+      </textarea>
+    </div>
+    <div id="div_graph">
+      <div>
+        <a href='javascript: nattoh.initGraph();'>init</a> |
+        <a href="javascript: nattoh.nattoh(500, 10);">start</a> |
+        <a href="javascript: nattoh.nattoh(-1, 10);">infinite</a> |
+        <a href="javascript: nattoh.nattoh(0,   10);">stop</a>
+      </div>
+      <div id="graph">
+      </div>
+    </div>
+    <div id="div_code">
+      &lt;?xml version="1.0" encoding="UTF-8"?&gt;<br/>
+      &lt;html xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:svg="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"&gt;<br/>
+      &lt;head&gt;<br/>
+      &nbsp;&nbsp;&lt;link rel="stylesheet" type="text/css" href="nattoh.css" /&gt;<br/>
+      &nbsp;&nbsp;&lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /&gt;<br/>
+      &lt;/head&gt;<br/>
+      &lt;body&gt;<br/>
+      <textarea id="code" class="textareas" placeholder="generated code."  cols="80" rows="30"></textarea><br/>
+      &lt;/body&gt;<br/>
+      &lt;/html&gt;
+    </div>
+    <div id="info">
+    </div>
+    <div id="div_tab">
+      <table id="tab" align="center">
+        <caption id="caption" class="murmur">
+          max width: <input type="number" id="max_width" size="7" value="512" /> px/box.<br/>
+          max width: <input type="number" id="max_window" size="7" value="1024" /> px/window.
+          <input type="number" id="n_cols" style="display: none;" value="14" />
+          <input type="number" id="n_depth" style="display: none;" value="4" />
+        </caption>
+        <thead>
+          <tr>
+            <th colspan="1" rowspan="2"></th>
+            <th>
+              <a id="t_n_0_t"  href="javascript: nattoh.colChange(0, nattoh.type_table);" title="is this parent makes table?">t</a>
+              <a id="t_n_0_g"  href="javascript: nattoh.colChange(0, nattoh.type_group);" title="is this parent makes color group?">g</a>
+              &nbsp;&nbsp;
+              <a class="up"    href="javascript: nattoh.colChange(0, nattoh.type_parent);" title="move to parent.">^</a>
+              <a class="down"  href="javascript: nattoh.colChange(0, nattoh.type_child);" title="move to child.">^</a>
+              <a class="left"  href="javascript: nattoh.colChange(0, nattoh.type_left);" title="move to left.">^</a>
+              <a class="right" href="javascript: nattoh.colChange(0, nattoh.type_right);" title="move to right.">^</a>
+              &nbsp;&nbsp;
+              <a href="javascript: nattoh.colChange(0, nattoh.type_add);" title="add node right.">+</a>
+              &nbsp;&nbsp;
+              <a href="javascript: nattoh.colChange(0, nattoh.type_delete);" title="delete this node.">-</a>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <textarea cols="30" rows="3" class="textareas" id="t_n_0_0" placeholder="node" readonly="readonly"></textarea>
+            </th>
+          </tr>
+        </thead><tbody>
+          <tr>
+            <th>
+              <textarea cols="30" rows="3" class="textareas" id="t_nb_0_0" placeholder="node" readonly="readonly"></textarea>
+            </th>
+            <td>
+              <div class="box">
+                <a id="e_0_0_0_d" href="javascript: nattoh.edgeChange(0, 0, nattoh.type_delete, 0);">-</a>
+                <a id="e_0_0_0_a" href="javascript: nattoh.edgeChange(0, 0, nattoh.type_add, 0);">+</a>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  <div id="footer">
+    <footer>Public domain.</footer>
+  </div>
+  <script type="text/javascript">nattoh.getInitialized('csv', 'graph');</script>
+</body>
+</html>
+
