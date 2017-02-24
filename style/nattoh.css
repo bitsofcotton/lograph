@@ -1,0 +1,145 @@
+body {
+  text-align: left;
+}
+
+table {
+  display: inline-block;
+  border-collapse: collapse;
+  margin: 10px;
+  padding: 10px;
+}
+
+th, td {
+  margin: 0px;
+  border: 1px solid #888;
+  vertical-align: middle;
+}
+
+input.textareas {
+  margin: 2px;
+  padding: 2px;
+  border: 1px solid #888;
+  resize: both;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* classes */
+.inexport {
+  border-collapse: none;
+  border: none;
+}
+
+.noline {
+  margin: 5px;
+  padding: 5px;
+  border: none;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.murmur {
+  color: #888;
+}
+
+.tooltip {
+  color: #888;
+  font-size: small;
+}
+
+.box {
+  text-align: right;
+  color:      #888;
+  font-size:  small;
+}
+
+.up {
+  display: inline-block;
+}
+
+.down {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg); 
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  display: inline-block;
+}
+
+.right {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  display: inline-block;
+}
+
+.left {
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg); 
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  display: inline-block;
+}
+
+.unvisible {
+  display: none;
+}
+
+.node {
+  background-color: #fff;
+  border: solid 3px #000;
+  border-radius: 6px;
+  margin:  3px;
+  padding: 3px;
+}
+
+.edge {
+  background-color: #888;
+  border: solid 3px #000;
+  border-radius: 6px;
+  margin: 3px;
+  padding: 3px;
+}
+
+/* id s */
+#menu {
+  position: fixed;
+  text-align: left;
+  left: 10%;
+  top:  90%;
+  background-color: white;
+  border: solid 3px black;
+  border-radius: 6px;
+  padding: 3px;
+  z-index: 3;
+}
+
+#dummy_menu {
+  margin: 10px;
+}
+
+#graph {
+  display: inline-block;
+  position: relative;
+  width: auto;
+  height: auto;
+  border: none;
+  background-color: transparent;
+}
+
+#div_tab {
+  text-align: center;
+}
+
+#div_code {
+  color: #888;
+  font-size: small;
+}
+
+#info {
+  color: #888;
+  width: 75%;
+  text-align: center
+}
