@@ -12,7 +12,7 @@ There's many preceeding result in the graph algorithms.
 Freezed. But to make this program worthy, list operation or changing animation is needed.
 And, more good graphization is needed.
 
-# Sample
+# Demo
 Preparing examples to services.limpid-intensity.info .
 
 # Another download sites
