@@ -17,4 +17,5 @@ Preparing examples to services.limpid-intensity.info .
 
 # Another download sites
 * https://www.sourceforge.net/projects/lograph/
+* https://konbu.sakura.ne.jp/files/lograph-0.1-prealpha.tar.gz
 * http://files.limpid-intensity.info/lograph-0.1-prealpha.tar.gz (preparing...)
