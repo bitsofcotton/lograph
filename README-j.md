@@ -18,4 +18,4 @@ services/log.cgi が実行可能になるように調整してください。
 # 他でのダウンロード
 * https://www.sourceforge.net/projects/lograph/
 * https://konbu.sakura.ne.jp/files/
-* http://files.limpid-intensity.info/
+* https://files.limpid-intensity.info/
