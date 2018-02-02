@@ -13,9 +13,9 @@ Freezed. But to make this program worthy, list operation or changing animation i
 And, more good graphization is needed.
 
 # Demo
-Preparing examples to services.limpid-intensity.info .
+Preparing examples to services.limpid-intensity.info , and is working on https://konbu.sakura.ne.jp/ .
 
 # Another download sites
 * https://www.sourceforge.net/projects/lograph/
-* https://konbu.sakura.ne.jp/files/lograph-0.1-prealpha.tar.gz
-* http://files.limpid-intensity.info/lograph-0.1-prealpha.tar.gz (preparing...)
+* https://konbu.sakura.ne.jp/files/
+* https://files.limpid-intensity.info/
