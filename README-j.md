@@ -13,9 +13,9 @@ services/log.cgi が実行可能になるように調整してください。
 また、もっと良い形でのグラフ化のアルゴリズムが必要です。
 
 # デモ
-準備中です... services.limpid-intensity.info 。
+準備中です... services.limpid-intensity.info , また、 https://konbu.sakura.ne.jp/ 上で稼働しているサンプルはあります。
 
 # 他でのダウンロード
 * https://www.sourceforge.net/projects/lograph/
-* https://konbu.sakura.ne.jp/files/lograph-0.1-prealpha.tar.gz
-* http://files.limpid-intensity.info/lograph-0.1-prealpha.tar.gz (準備中...)
+* https://konbu.sakura.ne.jp/files/
+* http://files.limpid-intensity.info/
