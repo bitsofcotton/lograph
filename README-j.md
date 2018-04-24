@@ -13,9 +13,8 @@ services/log.cgi が実行可能になるように調整してください。
 また、もっと良い形でのグラフ化のアルゴリズムが必要です。
 
 # デモ
-準備中です... services.limpid-intensity.info , また、 https://konbu.sakura.ne.jp/ 上で稼働しているサンプルはあります。
+https://services.limpid-intensity.info/ にあります。
 
 # 他でのダウンロード
 * https://www.sourceforge.net/projects/lograph/
-* https://konbu.sakura.ne.jp/files/
 * https://files.limpid-intensity.info/
