@@ -13,9 +13,8 @@ Freezed. But to make this program worthy, list operation or changing animation i
 And, more good graphization is needed.
 
 # Demo
-Preparing examples to services.limpid-intensity.info , and is working on https://konbu.sakura.ne.jp/ .
+Demo is at https://services.limpid-intensity.info/ .
 
 # Another download sites
 * https://www.sourceforge.net/projects/lograph/
-* https://konbu.sakura.ne.jp/files/
 * https://files.limpid-intensity.info/
