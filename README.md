@@ -12,9 +12,6 @@ There's many preceeding result in the graph algorithms.
 Freezed. But to make this program worthy, list operation or changing animation is needed.
 And, more good graphization is needed.
 
-# Demo
-Demo is at https://services.limpid-intensity.info/ .
-
 # Another download sites
 * https://www.sourceforge.net/projects/lograph/
-* https://files.limpid-intensity.info/
+* https://sites.google.com/view/bitsofcotton/
