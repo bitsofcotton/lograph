@@ -12,9 +12,6 @@ services/log.cgi が実行可能になるように調整してください。
 休止中です。ただし、このプログラムを実用可能にするために、リスト操作か、変更箇所がわかるアニメーションなどが必要です。
 また、もっと良い形でのグラフ化のアルゴリズムが必要です。
 
-# デモ
-https://services.limpid-intensity.info/ にあります。
-
 # 他でのダウンロード
 * https://www.sourceforge.net/projects/lograph/
-* https://files.limpid-intensity.info/
+* https://sites.google.com/view/bitsofcotton/
