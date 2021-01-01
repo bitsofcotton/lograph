@@ -9,9 +9,12 @@ Please configure the server as services/log.cgi runnable.
 There's many preceeding result in the graph algorithms.
 
 # Status
-Freezed. But to make this program worthy, list operation or changing animation is needed.
-And, more good graphization is needed.
+To make this program worthy, list operation or changing animation is needed.
+Better graphization is needed.
 
-# Another download sites
-* https://www.sourceforge.net/projects/lograph/
-* https://sites.google.com/view/bitsofcotton/
+# Another Download Sites
+* https://drive.google.com/drive/folders/1B71X1BMttL6yyi76REeOTNRrpopO8EAR?usp=sharing
+* https://1drv.ms/u/s!AnqkwcwMjB_PaDIfXya_M3-aLXw?e=qzfKcU
+
+# Archive
+This repository is archived, so without bugreport, will no change.
