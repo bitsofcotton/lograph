@@ -9,9 +9,12 @@ services/log.cgi が実行可能になるように調整してください。
 グラフアルゴリズムに当時から沢山の先行がありました。
 
 # 開発状態
-休止中です。ただし、このプログラムを実用可能にするために、リスト操作か、変更箇所がわかるアニメーションなどが必要です。
+このプログラムを実用可能にするために、リスト操作か、変更箇所がわかるアニメーションなどが必要です。
 また、もっと良い形でのグラフ化のアルゴリズムが必要です。
 
 # 他でのダウンロード
-* https://www.sourceforge.net/projects/lograph/
-* https://sites.google.com/view/bitsofcotton/
+* https://drive.google.com/drive/folders/1B71X1BMttL6yyi76REeOTNRrpopO8EAR?usp=sharing
+* https://1drv.ms/u/s!AnqkwcwMjB_PaDIfXya_M3-aLXw?e=qzfKcU
+
+# Archive
+This repository is archived, so without bugreport, will no change.
