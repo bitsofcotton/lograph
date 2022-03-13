@@ -168,7 +168,7 @@ def logarithm(log, keys, types, threshold):
     thresh = []
     for i in range(0, len(result["Count"])):
       thresh.append([i, result["Count"][i]])
-    thresh.sort(lambda x, y: x[1] < y[1])
+    thresh.sort(key = lambda x: x[1])
     res = { "Count" : [], "Start" : [], "Depth" : [], "Log" : result["Log"] }
     for i in range(0, min(threshold, len(result["Count"]))):
       res["Count"].append(result["Count"][thresh[i][0]])
