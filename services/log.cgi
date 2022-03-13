@@ -1,11 +1,12 @@
-#! /usr/local/bin/python
+#! /usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+import os
 import math
 import string
 import re
 import sys
-import os
+import functools
 
 import cgi
 import cgitb
@@ -56,7 +57,7 @@ def parse(f, fmt, grp, type):
     return {"error" : ["cannot open file."], "log" : []}
   result = {"error" : [], "log" : []}
   while 1:
-    line = f.readline()
+    line = f.readline().decode("utf-8")
     if not line: break
     m = fmt.search(line)
     if(not m):
@@ -93,40 +94,35 @@ def max_depth(types):
 
 def compare_type(x, y, type, is_return_depth):
   if(type[0] == "s" or type[0] == "n"):
-    comp = cmp(x, y)
     if(is_return_depth != 0):
-      if(0 != comp):
+      if(x != y):
         return 0
       else:
         return 1
-    return comp
+    elif(x < y): return - 1
+    return 1
   elif(type[0] == "S"):
     for i in range(0, min(min(len(x), len(y)), type[3])):
-      comp = cmp(x[i], y[i])
-      if(comp):
+      if(x[i] != y[i]):
         if(is_return_depth != 0):
           return i
-        else:
-          return comp
+        elif(x[i] < y[i]): return - 1
+        return 1
     if(is_return_depth != 0):
       if(len(x) != len(y) and min(len(x), len(y)) + 1 < type[3]):
         return min(len(x), len(y)) + 1
       return type[3]
     elif(type[3] <= min(len(x), len(y))):
       return 0
-    else:
-      if(len(x) < len(y)):
-        return -1
-      elif(len(x) > len(y)):
-        return 1
+    elif(len(x) < len(y)): return - 1
+    return 1
   elif(type[0] == "N"):
-    comp = cmp(x["Range"], y["Range"])
     if(is_return_depth != 0):
-      if(0 != comp):
+      if(x["Range"] != y["Range"]):
         return 0
       else:
         return 1
-    return comp
+    return x["Range"] < y["Range"]
   return 0
 
 def compare_log(x, y, keys, types, is_return_depth):
@@ -208,10 +204,10 @@ def create_output_graph(log, keys, types, threshold, thresholdnode):
   indices = []
   for i in range(0, len(keys)):
     for j in range(i + 1, len(keys)):
-      log["log"].sort(lambda x, y: compare_log(x, y, [keys[i], keys[j]], [types[i], types[j]], 0))
+      log["log"].sort(key = functools.cmp_to_key(lambda x, y: compare_log(x, y, [keys[i], keys[j]], [types[i], types[j]], 0)))
       logs[-1].append(logarithm(log, [keys[i], keys[j]], [types[i], types[j]], thresholdnode).copy())
     logs.append([])
-    log["log"].sort(lambda x, y: compare_log(x, y, [keys[i]], [types[i]], 0))
+    log["log"].sort(key = functools.cmp_to_key(lambda x, y: compare_log(x, y, [keys[i]], [types[i]], 0)))
     indices.append(logarithm(log, [keys[i]], [types[i]], thresholdnode).copy())
   
   depth  = 0
@@ -316,8 +312,8 @@ def create_output_graph(log, keys, types, threshold, thresholdnode):
       output.write(", , \n")
 
 # fast response.
-print "Content-Type: text/html"
-print
+print("Content-Type: text/html")
+print("")
 
 # initialize in and out.
 form   = cgi.FieldStorage()
@@ -330,8 +326,8 @@ if(threshold < 1):
 thresholdnode = parse_form(form["thresholdnode"], "n", 15)
 if(thresholdnode < 1):
   thresholdnode = 1
-elif(15 < thresholdnode):
-  thresholdnode = 15
+elif(60 < thresholdnode):
+  thresholdnode = 60
 
 regex   = re.compile(parse_form(form["regex"], "s", r"^(.+)$"))
 a_keys  = parse_split_form(form["field"], ",", re.compile(r"([a-zA-Z0-9]+)"), ["none"])
@@ -363,7 +359,7 @@ types = []
 for i in range(0, len(keys)):
   k = len(a_keys)
   for j in range(0, len(a_keys)):
-    if(not cmp(keys[i], a_keys[j])):
+    if(keys[i] == a_keys[j]):
       k = j
       break
   if(k >= len(a_keys)):
@@ -386,8 +382,8 @@ for line in f:
 f.close
 
 # parse.
-if(int(os.environ['CONTENT_LENGTH']) > 3 * 1024 * 1024):
-  log = {"error" : ["Too large file (restricted &lt; 3MB for sample.)"]}
+if(int(os.environ['CONTENT_LENGTH']) > 15 * 1024 * 1024):
+  log = {"error" : ["Too large file (restricted &lt; 15MB for sample.)"]}
   for i in range(0, len(types)):
     result[a_keys[i]] = "_error_"
 else:
